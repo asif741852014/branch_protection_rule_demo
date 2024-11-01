@@ -1,0 +1,9 @@
+name: a
+on:
+  branch_protection_rule:
+    types: ["created","edited","deleted"]
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "hai from job1"
